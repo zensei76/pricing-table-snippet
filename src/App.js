@@ -6,7 +6,6 @@ export default App;
 
 function App() {
 
-  
   let cardData = [
     {
       title: "FREE",
