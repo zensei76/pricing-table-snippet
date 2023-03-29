@@ -1,22 +1,20 @@
-body{
-background: #007bff;
-background: linear-gradient(to right, #0062E6, #33AEFF);
-
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062e6, #33aeff);
 }
 
-.container{
-margin-top: 10%;
+.container {
+  margin-top: 10%;
 }
-
 
 .card {
   border: none;
   margin-left: 5px;
   margin-right: 5px;
-  height: 540px !important;
+  /* height: 540px !important; */
   border-radius: 1rem !important;
-  transition: all 0.2s ;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1) ;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
 }
 
 hr {
@@ -25,7 +23,7 @@ hr {
 .card-title {
   margin: 0.5rem 0;
   font-size: 0.9rem;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   font-weight: bold;
 }
 
@@ -38,21 +36,20 @@ hr {
   font-size: 0.8rem;
 }
 
-ul li {
+.feature {
   margin-bottom: 1rem;
 }
 
 .text-muted {
-  opacity: 0.7 ;
+  opacity: 0.7;
 }
 
 .btn {
-  align-self: center;
   font-size: 80%;
-  margin-bottom: 20px;
-  width: 90%;
+
+  width: 100%;
   border-radius: 5rem !important;
-  letter-spacing: .1rem !important;
+  letter-spacing: 0.1rem !important;
   font-weight: bold !important;
   padding: 1rem !important;
   opacity: 0.7 !important;
@@ -63,12 +60,12 @@ ul li {
 
 @media (min-width: 992px) {
   .card:hover {
-    margin-top: -.25rem;
-    margin-bottom: .25rem;
+    margin-top: -0.25rem;
+    margin-bottom: 0.25rem;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
   }
 
-   .btn {
+  .btn {
     opacity: 1;
   }
 }
