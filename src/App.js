@@ -45,24 +45,20 @@ function App() {
   return (
     <Container className='container'>
       <Row>
-        {cardData.map(
-          (card) => (
-            (
-              <PricingCard
-                title={card.title}
-                cost={card.cost}
-                feature1={card.feature1}
-                feature2={card.feature2}
-                feature3={card.feature3}
-                feature4={card.feature4}
-                feature5={card.feature5}
-                feature6={card.feature6}
-                feature7={card.feature7}
-                feature8={card.feature8}
-              />
-            )
-          )
-        )}
+        {cardData.map((card) => (
+          <PricingCard
+            title={card.title}
+            cost={card.cost}
+            feature1={card.feature1}
+            feature2={card.feature2}
+            feature3={card.feature3}
+            feature4={card.feature4}
+            feature5={card.feature5}
+            feature6={card.feature6}
+            feature7={card.feature7}
+            feature8={card.feature8}
+          />
+        ))}
       </Row>
     </Container>
   );
@@ -93,14 +89,14 @@ function PricingCard({
           </Card.Title>
           <hr />
           <Card.Text>
-            <div className="feature"> {feature1}</div >
-            <div className="feature"> {feature2}</div >
-            <div className="feature"> {feature3}</div >
-            <div className="feature"> {feature4}</div >
-            <div className="feature"> {feature5}</div >
-            <div className="feature"> {feature6} </div >
-            <div className="feature"> {feature7}</div >
-            <div className="feature"> {feature8}</div >
+            <div className='feature'> {feature1}</div>
+            <div className='feature'> {feature2}</div>
+            <div className='feature'> {feature3}</div>
+            <div className='feature'> {feature4}</div>
+            <div className='feature'> {feature5}</div>
+            <div className='feature'> {feature6} </div>
+            <div className='feature'> {feature7}</div>
+            <div className='feature'> {feature8}</div>
           </Card.Text>
           <Button className='btn btn-primary '>BUTTON</Button>
         </Card.Body>
