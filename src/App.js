@@ -1,220 +1,111 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Button, Card, Container, Row, Col, CardGroup } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { Button, Card, Container, Row, Col } from "react-bootstrap";
+export default App;
+
+let cardData = [
+  {
+    title: "FREE",
+    cost: 0,
+    feature1: "✔ Single User",
+    feature2: "✔ 5GB Storage",
+    feature3: "✔ Unlimited Public Projects",
+    feature4: "✔ Community Access",
+    feature5: "✖ Unlimited Private Projects",
+    feature6: "✖ Dedicated Phone Support",
+    feature7: "✖ Free Subdomain",
+    feature8: "✖ Monthly Status Reports",
+  },
+  {
+    title: "PLUS",
+    cost: 9,
+    feature1: "✔ 5 User",
+    feature2: "✔ 50GB Storage",
+    feature3: "✔ Unlimited Public Projects",
+    feature4: "✔ Community Access",
+    feature5: "✔ Unlimited Private Projects",
+    feature6: "✔ Dedicated Phone Support",
+    feature7: "✔ Free Subdomain",
+    feature8: "✖ Monthly Status Reports",
+  },
+  {
+    title: "PRO",
+    cost: 49,
+    feature1: "✔ Unlimited User",
+    feature2: "✔ 150GB Storage",
+    feature3: "✔ Unlimited Public Projects",
+    feature4: "✔ Community Access",
+    feature5: "✔ Unlimited Private Projects",
+    feature6: "✔ Dedicated Phone Support",
+    feature7: "✔ Unlimited Free Subdomain",
+    feature8: "✔ Monthly Status Reports",
+  },
+];
 function App() {
   return (
-    <Container className="container">
-      <Row >
-        <Col lg='4' >
-          <Card >
-            <Card.Body>
-              <Card.Title>
-                <h5 class='card-title text-muted  text-center'>
-                  Free
-                </h5>
-                <h6 class='card-price text-center'>
-                  $0<span class='period'>/month</span>
-                </h6>
-              </Card.Title>
-              <hr />
-              <Card.Text>
-                <ul className='fa-ul'>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    Single User
-                  </li>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    5GB Storage
-                  </li>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    Unlimited Public Projects
-                  </li>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    Community Access
-                  </li>
-                  <li className='text-muted'>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faXmark} />
-                    </span>
-                    Unlimited Private Projects
-                  </li>
-                  <li className='text-muted'>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faXmark} />
-                    </span>
-                    Dedicated Phone Support
-                  </li>
-                  <li className='text-muted'>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faXmark} />
-                    </span>
-                    Free Subdomain
-                  </li>
-                  <li className='text-muted'>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faXmark} />
-                    </span>
-                    Monthly Status Reports
-                  </li>
-                </ul>
-              </Card.Text>
-            </Card.Body>
-            <Button className='btn btn-primary '>BUTTON</Button>
-          </Card>
-        </Col>
-        <Col lg='4'>
-          <Card>
-            <Card.Body>
-              <Card.Title>
-                <h5 class='card-title text-muted  text-center'>
-                  Plus
-                </h5>
-                <h6 class='card-price text-center'>
-                  $9<span class='period'>/month</span>
-                </h6>
-              </Card.Title>
-              <hr />
-              <Card.Text>
-                <ul className='fa-ul'>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    5 Users
-                  </li>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    50GB Storage
-                  </li>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    Unlimited Public Projects
-                  </li>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    Community Access
-                  </li>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    Unlimited Private Projects
-                  </li>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    Dedicated Phone Support
-                  </li>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    Free Subdomain
-                  </li>
-                  <li className='text-muted'>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faXmark} />
-                    </span>
-                    Monthly Status Reports
-                  </li>
-                </ul>
-              </Card.Text>
-            </Card.Body>
-            <Button className='btn btn-primary '>BUTTON</Button>
-          </Card>
-        </Col>
-        <Col lg='4'>
-          <Card>
-            <Card.Body>
-              <Card.Title>
-                <h5 class='card-title text-muted  text-center'>
-                  Pro
-                </h5>
-                <h6 class='card-price text-center'>
-                  $49<span class='period'>/month</span>
-                </h6>
-              </Card.Title>
-              <hr />
-              <Card.Text>
-                <ul className='fa-ul'>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    <strong>Unlimited Users</strong>
-                  </li>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    500GB Storage
-                  </li>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    Unlimited Public Projects
-                  </li>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    Community Access
-                  </li>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    Unlimited Private Projects
-                  </li>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    Dedicated Phone Support
-                  </li>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    <strong>Unlimited</strong>Free Subdomain
-                  </li>
-                  <li>
-                    <span className='fa-li'>
-                      <FontAwesomeIcon icon={faCheck} />
-                    </span>
-                    Monthly Status Reports
-                  </li>
-                </ul>
-              </Card.Text>
-            </Card.Body>
-            
-            <Button className='btn btn-primary '>BUTTON</Button>
-          </Card>
-        </Col>
+    <Container className='container'>
+      <Row>
+        {cardData.map(
+          (card) => (
+            console.log(card),
+            (
+              <PricingCard
+                title={card.title}
+                cost={card.cost}
+                feature1={card.feature1}
+                feature2={card.feature2}
+                feature3={card.feature3}
+                feature4={card.feature4}
+                feature5={card.feature5}
+                feature6={card.feature6}
+                feature7={card.feature7}
+                feature8={card.feature8}
+              />
+            )
+          )
+        )}
       </Row>
     </Container>
   );
 }
 
-export default App;
+function PricingCard({
+  title,
+  cost,
+  feature1,
+  feature2,
+  feature3,
+  feature4,
+  feature5,
+  feature6,
+  feature7,
+  feature8,
+}) {
+  return (
+    <Col lg='4'>
+      <Card>
+        <Card.Body>
+          <Card.Title>
+            <h5 className='card-title text-muted  text-center'>{title}</h5>
+            <h6 className='card-price text-center'>
+              ${cost}
+              <span className='period'>/month</span>
+            </h6>
+          </Card.Title>
+          <hr />
+          <Card.Text>
+            <div className="feature"> {feature1}</div >
+            <div className="feature"> {feature2}</div >
+            <div className="feature"> {feature3}</div >
+            <div className="feature"> {feature4}</div >
+            <div className="feature"> {feature5}</div >
+            <div className="feature"> {feature6} </div >
+            <div className="feature"> {feature7}</div >
+            <div className="feature"> {feature8}</div >
+          </Card.Text>
+          <Button className='btn btn-primary '>BUTTON</Button>
+        </Card.Body>
+      </Card>
+    </Col>
+  );
+}
