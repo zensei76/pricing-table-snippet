@@ -3,45 +3,46 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Card, Container, Row, Col } from "react-bootstrap";
 export default App;
 
-let cardData = [
-  {
-    title: "FREE",
-    cost: 0,
-    feature1: "✔ Single User",
-    feature2: "✔ 5GB Storage",
-    feature3: "✔ Unlimited Public Projects",
-    feature4: "✔ Community Access",
-    feature5: "✖ Unlimited Private Projects",
-    feature6: "✖ Dedicated Phone Support",
-    feature7: "✖ Free Subdomain",
-    feature8: "✖ Monthly Status Reports",
-  },
-  {
-    title: "PLUS",
-    cost: 9,
-    feature1: "✔ 5 User",
-    feature2: "✔ 50GB Storage",
-    feature3: "✔ Unlimited Public Projects",
-    feature4: "✔ Community Access",
-    feature5: "✔ Unlimited Private Projects",
-    feature6: "✔ Dedicated Phone Support",
-    feature7: "✔ Free Subdomain",
-    feature8: "✖ Monthly Status Reports",
-  },
-  {
-    title: "PRO",
-    cost: 49,
-    feature1: "✔ Unlimited User",
-    feature2: "✔ 150GB Storage",
-    feature3: "✔ Unlimited Public Projects",
-    feature4: "✔ Community Access",
-    feature5: "✔ Unlimited Private Projects",
-    feature6: "✔ Dedicated Phone Support",
-    feature7: "✔ Unlimited Free Subdomain",
-    feature8: "✔ Monthly Status Reports",
-  },
-];
+
 function App() {
+  let cardData = [
+    {
+      title: "FREE",
+      cost: 0,
+      feature1: "✔ Single User",
+      feature2: "✔ 5GB Storage",
+      feature3: "✔ Unlimited Public Projects",
+      feature4: "✔ Community Access",
+      feature5: "✖ Unlimited Private Projects",
+      feature6: "✖ Dedicated Phone Support",
+      feature7: "✖ Free Subdomain",
+      feature8: "✖ Monthly Status Reports",
+    },
+    {
+      title: "PLUS",
+      cost: 9,
+      feature1: "✔ 5 User",
+      feature2: "✔ 50GB Storage",
+      feature3: "✔ Unlimited Public Projects",
+      feature4: "✔ Community Access",
+      feature5: "✔ Unlimited Private Projects",
+      feature6: "✔ Dedicated Phone Support",
+      feature7: "✔ Free Subdomain",
+      feature8: "✖ Monthly Status Reports",
+    },
+    {
+      title: "PRO",
+      cost: 49,
+      feature1: "✔ Unlimited User",
+      feature2: "✔ 150GB Storage",
+      feature3: "✔ Unlimited Public Projects",
+      feature4: "✔ Community Access",
+      feature5: "✔ Unlimited Private Projects",
+      feature6: "✔ Dedicated Phone Support",
+      feature7: "✔ Unlimited Free Subdomain",
+      feature8: "✔ Monthly Status Reports",
+    },
+  ];
   return (
     <Container className='container'>
       <Row>
