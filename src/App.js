@@ -47,7 +47,6 @@ function App() {
       <Row>
         {cardData.map(
           (card) => (
-            console.log(card),
             (
               <PricingCard
                 title={card.title}
